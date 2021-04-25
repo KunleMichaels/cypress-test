@@ -1,0 +1,22 @@
+{
+  "name": "cypress_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "cypress:run:record": "cypress run --record",
+    "start": "node server.js --port 5000",
+    "test:ci": "start-test 5000 cypress:run",
+    "test:ci:record": "start-test 5000 cypress:run:record"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^7.1.0",
+    "express": "^4.17.1",
+    "minimist": "^1.2.5",
+    "start-server-and-test": "^1.12.1"
+  }
+}
